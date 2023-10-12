@@ -1,0 +1,61 @@
+# Create user
+### 
+POST http://localhost:3000/api/v1/users
+Content-Type: application/json
+
+{
+  "name": "V",
+  "email": "taehyung@gmail.com",
+  "password": "12345678",
+  "identity_type": "NO HP",
+  "identity_number": "085870795768"
+}
+
+# getAlluser
+###
+GET http://localhost:3000/api/v1/users
+
+# getDetailuser
+###
+GET http://localhost:3000/api/v1/users/2
+
+# createAccount
+###
+POST http://localhost:3000/api/v1/accounts
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "bank_name": "BNI",
+  "bank_account_number": "76658493",
+  "balance": "1000000"
+ 
+}
+
+# getAllaccount
+###
+GET http://localhost:3000/api/v1/accounts
+
+# getDetailaccount
+###
+GET http://localhost:3000/api/v1/accounts/2
+
+# createTransaction
+###
+POST http://localhost:3000/api/v1/transactions
+Content-Type: application/json
+
+{
+  "source_account_id": 1,
+  "destination_account_id": 2,
+  "amount": "100000"
+
+}
+
+# getAlltransaction
+###
+GET http://localhost:3000/api/v1/transactions
+
+# getDetailtransaction
+###
+GET http://localhost:3000/api/v1/transactions/1
