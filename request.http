@@ -52,10 +52,10 @@ Content-Type: application/json
 
 }
 
-# getAlltransaction
+# getAlltransactions
 ###
 GET http://localhost:3000/api/v1/transactions
 
-# getDetailtransaction
+# getDetailtransactions
 ###
 GET http://localhost:3000/api/v1/transactions/1
